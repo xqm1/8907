@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/chuangzuo_pindao_rishang.css">
+    <link rel="stylesheet" href="font_850052_m70acx1asl/iconfont.css">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/remstyle.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/chuangzuo_pindao_rishang.js"></script>
+</head>
+<body>
+<div id="head"></div>
+<div id="section"></div>
+<footer id="footer"></footer>
+<script>
+    $(function () {
+        $("#head").load("header.html")
+        $("#section").load("rishang.html")
+        $("footer").load("footer.html")
+
+        $("._nav ul li").live('click',function () {
+            // $("._nav ul li").each(function () {
+            //     $(this).css("borderBottom","")
+            // })
+            var kk = $(this).attr("k")
+            $(this).css("borderBottom","1px solid red").siblings().css("borderBottom","")
+            $("#section").load(kk+".html")
+        })
+        setTimeout(function () {
+            $("._nav ul li").eq(0).click()
+        },50)
+
+        $(".jinxuan").live('click',function () {
+            $(window).attr('location','创作_精选.html')
+        })
+    })
+</script>
+<!--<header>-->
+    <!--<div>-->
+        <!--<span class="sp_left"><img src="images/chan_subsc.png" alt=""></span>-->
+        <!--<div>-->
+            <!--<span>精选</span><span>频道</span>-->
+        <!--</div>-->
+        <!--<span class="sp_right">+</span>-->
+    <!--</div>-->
+<!--</header>-->
+<!--<nav class="_nav">-->
+    <!--<ul class="_ul1">-->
+        <!--<li k="rishang"><a href="#">日赏</a></li>-->
+        <!--<span class="line">|</span>-->
+        <!--<li k="biji"><a href="#">笔记</a></li>-->
+        <!--<span class="line">|</span>-->
+        <!--<li k="xiezi"><a href="#">写字</a></li>-->
+        <!--<span class="line">|</span>-->
+        <!--<li k="3"><a href="#">语音</a></li>-->
+        <!--<span class="line">|</span>-->
+        <!--<li k="4"><a href="#">绘画</a></li>-->
+        <!--<span class="line">|</span>-->
+        <!--<li  k="5"><a href="#">配图</a></li>-->
+        <!--<span class="line">|</span>-->
+        <!--<li k="6"><a href="#">原创</a></li>-->
+        <!--<span class="line">|</span>-->
+        <!--<li k="7"><a href="#">新诗</a></li>-->
+        <!--<span class="line">|</span>-->
+        <!--<li k="8"><a href="#">音乐</a></li>-->
+        <!--<span class="line">|</span>-->
+        <!--<li k="9"><a href="#">市集</a></li>-->
+    <!--</ul>-->
+<!--</nav>-->
+<!--<section class="section_2">-->
+    <!--<div class="sec_1_cen">-->
+        <!--<div class="top_pic"><img src="images/xcz_round.png" alt=""></div>-->
+        <!--<div class="sec_1_inner">-->
+            <!--<p><span class="sec_1_inner_p_left">烛烛</span><span class="sec_1_inner_p_right"><</span></p>-->
+            <!--<div style="clear: both"></div>-->
+            <!--<p class="pp">江山如画，一时多少豪杰。</p>-->
+            <!--<div class="shiji">-->
+                <!--<p class="shiji_top">念奴娇·赤壁怀古</p>-->
+                <!--<p class="shiji_p">大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。 乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰。</p>-->
+            <!--</div>-->
+            <!--<div class="bott">-->
+                <!--<span>11小时前</span>-->
+                <!--<span class="icon_3"><i class="icon iconfont icon-shoucang">61</i></span>-->
+                <!--<span class="icon_2"><i class="icon iconfont icon-pinglun">7</i></span>-->
+
+                <!--<span class="icon_1"><i class="icon iconfont icon-fenxiang"> </i></span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div style="clear: both"></div>-->
+<!--</section>-->
+<!--<section class="section_3">-->
+    <!--<div class="sec_1_cen">-->
+        <!--<div class="top_pic"><img src="images/xcz_round.png" alt=""></div>-->
+        <!--<div class="sec_1_inner">-->
+            <!--<p><span class="sec_1_inner_p_left">烛烛</span><span class="sec_1_inner_p_right"><</span></p>-->
+            <!--<div style="clear: both"></div>-->
+            <!--<p class="pp">不学礼，无以立。</p>-->
+            <!--<div class="shiji">-->
+                <!--<p class="shiji_top">论语·季氏篇</p>-->
+                <!--<p class="shiji_p">季氏将伐颛臾。冉有、季路见于孔子曰：“季氏将有事于颛臾。 ”孔子曰：“求！ 无乃尔是过与？夫颛臾，昔者先王以为东蒙主，且在邦域之中...</p>-->
+            <!--</div>-->
+            <!--<div class="bott">-->
+                <!--<span>11小时前</span>-->
+                <!--<span class="icon_3"><i class="icon iconfont icon-shoucang">61</i></span>-->
+                <!--<span class="icon_2"><i class="icon iconfont icon-pinglun">7</i></span>-->
+
+                <!--<span class="icon_1"><i class="icon iconfont icon-fenxiang"> </i></span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div style="clear: both"></div>-->
+<!--</section>-->
+<!--<section class="section_3">-->
+    <!--<div class="sec_1_cen">-->
+        <!--<div class="top_pic"><img src="images/xcz_round.png" alt=""></div>-->
+        <!--<div class="sec_1_inner">-->
+            <!--<p><span class="sec_1_inner_p_left">烛烛</span><span class="sec_1_inner_p_right"><</span></p>-->
+            <!--<div style="clear: both"></div>-->
+            <!--<p class="pp">海上生明月，天涯共此时。</p>-->
+            <!--<div class="shiji">-->
+                <!--<p class="shiji_top">望月怀远</p>-->
+                <!--<p class="shiji_p">海上生明月，天涯共此时。 情人怨遥夜，竟夕起相思。 灭烛怜光满，披衣觉露滋。 不堪盈手赠，还寝梦佳期。</p>-->
+            <!--</div>-->
+            <!--<div class="bott">-->
+                <!--<span>11小时前</span>-->
+                <!--<span class="icon_3"><i class="icon iconfont icon-shoucang">61</i></span>-->
+                <!--<span class="icon_2"><i class="icon iconfont icon-pinglun">7</i></span>-->
+
+                <!--<span class="icon_1"><i class="icon iconfont icon-fenxiang"> </i></span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div style="clear: both"></div>-->
+<!--</section>-->
+<!--<section class="section_3">-->
+    <!--<div class="sec_1_cen">-->
+        <!--<div class="top_pic"><img src="images/xcz_round.png" alt=""></div>-->
+        <!--<div class="sec_1_inner">-->
+            <!--<p><span class="sec_1_inner_p_left">烛烛</span><span class="sec_1_inner_p_right"><</span></p>-->
+            <!--<div style="clear: both"></div>-->
+            <!--<p class="pp">秋分维何，天高气清。</p>-->
+            <!--<div class="shiji">-->
+                <!--<p class="shiji_top">寿皇子</p>-->
+                <!--<p class="shiji_p">磊魁晶荧，岁有常期。秋分维何，天高气清。玉蟾吐煇，银汉无声。澄霄一色，万里云平。</p>-->
+            <!--</div>-->
+            <!--<div class="bott">-->
+                <!--<span>11小时前</span>-->
+                <!--<span class="icon_3"><i class="icon iconfont icon-shoucang">61</i></span>-->
+                <!--<span class="icon_2"><i class="icon iconfont icon-pinglun">7</i></span>-->
+
+                <!--<span class="icon_1"><i class="icon iconfont icon-fenxiang"> </i></span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div style="clear: both"></div>-->
+<!--</section>-->
+<!--<section class="section_3">-->
+    <!--<div class="sec_1_cen">-->
+        <!--<div class="top_pic"><img src="images/xcz_round.png" alt=""></div>-->
+        <!--<div class="sec_1_inner">-->
+            <!--<p><span class="sec_1_inner_p_left">烛烛</span><span class="sec_1_inner_p_right"><</span></p>-->
+            <!--<div style="clear: both"></div>-->
+            <!--<p class="pp">江山如画，一时多少豪杰。</p>-->
+            <!--<div class="shiji">-->
+                <!--<p class="shiji_top">念奴娇·赤壁怀古</p>-->
+                <!--<p class="shiji_p">大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。 乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰。</p>-->
+            <!--</div>-->
+            <!--<div class="bott">-->
+                <!--<span>11小时前</span>-->
+                <!--<span class="icon_3"><i class="icon iconfont icon-shoucang">61</i></span>-->
+                <!--<span class="icon_2"><i class="icon iconfont icon-pinglun">7</i></span>-->
+
+                <!--<span class="icon_1"><i class="icon iconfont icon-fenxiang"> </i></span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div style="clear: both"></div>-->
+<!--</section>-->
+<!--<section class="section_3">-->
+    <!--<div class="sec_1_cen">-->
+        <!--<div class="top_pic"><img src="images/xcz_round.png" alt=""></div>-->
+        <!--<div class="sec_1_inner">-->
+            <!--<p><span class="sec_1_inner_p_left">烛烛</span><span class="sec_1_inner_p_right"><</span></p>-->
+            <!--<div style="clear: both"></div>-->
+            <!--<p class="pp">不学礼，无以立。</p>-->
+            <!--<div class="shiji">-->
+                <!--<p class="shiji_top">论语·季氏篇</p>-->
+                <!--<p class="shiji_p">季氏将伐颛臾。冉有、季路见于孔子曰：“季氏将有事于颛臾。 ”孔子曰：“求！ 无乃尔是过与？夫颛臾，昔者先王以为东蒙主，且在邦域之中...</p>-->
+            <!--</div>-->
+            <!--<div class="bott">-->
+                <!--<span>11小时前</span>-->
+                <!--<span class="icon_3"><i class="icon iconfont icon-shoucang">61</i></span>-->
+                <!--<span class="icon_2"><i class="icon iconfont icon-pinglun">7</i></span>-->
+
+                <!--<span class="icon_1"><i class="icon iconfont icon-fenxiang"> </i></span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div style="clear: both"></div>-->
+<!--</section>-->
+<!--<section class="section_3">-->
+    <!--<div class="sec_1_cen">-->
+        <!--<div class="top_pic"><img src="images/xcz_round.png" alt=""></div>-->
+        <!--<div class="sec_1_inner">-->
+            <!--<p><span class="sec_1_inner_p_left">烛烛</span><span class="sec_1_inner_p_right"><</span></p>-->
+            <!--<div style="clear: both"></div>-->
+            <!--<p class="pp">海上生明月，天涯共此时。</p>-->
+            <!--<div class="shiji">-->
+                <!--<p class="shiji_top">望月怀远</p>-->
+                <!--<p class="shiji_p">海上生明月，天涯共此时。 情人怨遥夜，竟夕起相思。 灭烛怜光满，披衣觉露滋。 不堪盈手赠，还寝梦佳期。</p>-->
+            <!--</div>-->
+            <!--<div class="bott">-->
+                <!--<span>11小时前</span>-->
+                <!--<span class="icon_3"><i class="icon iconfont icon-shoucang">61</i></span>-->
+                <!--<span class="icon_2"><i class="icon iconfont icon-pinglun">7</i></span>-->
+
+                <!--<span class="icon_1"><i class="icon iconfont icon-fenxiang"> </i></span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div style="clear: both"></div>-->
+<!--</section>-->
+<!--<section class="section_4">-->
+    <!--<div class="sec_1_cen">-->
+        <!--<div class="top_pic"><img src="images/xcz_round.png" alt=""></div>-->
+        <!--<div class="sec_1_inner">-->
+            <!--<p><span class="sec_1_inner_p_left">烛烛</span><span class="sec_1_inner_p_right"><</span></p>-->
+            <!--<div style="clear: both"></div>-->
+            <!--<p class="pp">秋分维何，天高气清。</p>-->
+            <!--<div class="shiji">-->
+                <!--<p class="shiji_top">寿皇子</p>-->
+                <!--<p class="shiji_p">磊魁晶荧，岁有常期。秋分维何，天高气清。玉蟾吐煇，银汉无声。澄霄一色，万里云平。</p>-->
+            <!--</div>-->
+            <!--<div class="bott">-->
+                <!--<span>11小时前</span>-->
+                <!--<span class="icon_3"><i class="icon iconfont icon-shoucang">61</i></span>-->
+                <!--<span class="icon_2"><i class="icon iconfont icon-pinglun">7</i></span>-->
+
+                <!--<span class="icon_1"><i class="icon iconfont icon-fenxiang"> </i></span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div style="clear: both"></div>-->
+<!--</section>-->
+<!--<footer>-->
+    <!--<ul>-->
+        <!--<li class="footimgs" k="0"><img src="images/mtab1_off.png" alt=""><p>摘录</p></li>-->
+        <!--<li class="footimgs" k="1"><img src="images/mtab2_off.png" alt=""><p>创作</p></li>-->
+        <!--<li class="footimgs" k="2"><img src="images/mtab3_off.png" alt=""><p>发现</p></li>-->
+        <!--<li class="footimgs" k="3"><img src="images/mtab4_off.png" alt=""><p>文库</p></li>-->
+        <!--<li class="footimgs" k="4"><img src="images/mtab5_off.png" alt=""><p>我</p></li>-->
+    <!--</ul>-->
+<!--</footer>-->
+</body>
+</html>

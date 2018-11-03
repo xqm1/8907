@@ -1,0 +1,87 @@
+<ul>
+    <li class="footimgs" k="0"><img src="images/mtab1_off.png" alt=""><p>摘录</p></li>
+    <li class="footimgs" k="1"><img src="images/mtab2_off.png" alt=""><p>创作</p></li>
+    <li class="footimgs" k="2"><img src="images/mtab3_off.png" alt=""><p>发现</p></li>
+    <li class="footimgs" k="3"><img src="images/mtab4_off.png" alt=""><p>文库</p></li>
+    <li class="footimgs" k="4"><img src="images/mtab5_off.png" alt=""><p>我</p></li>
+</ul>
+
+<style>
+    footer{width: 100%;height: 4.2rem;position:fixed;bottom: 0;background-color: white;}
+    footer ul{list-style: none;border-top: 1px silver solid;height: 4rem;}
+    footer ul li{float:left;width: 20%;text-align: center;height: 100%}
+    footer ul li img{width: 50%;height: 60%;margin-top: 0.1rem}
+    footer ul li p{font-size: 1rem;}
+</style>
+
+<script>
+    $(".footimgs").eq(0).click(function () {
+        $(".footimgs").each(function () {
+            $(".footimgs p").css("color","");
+            $(".footimgs img").eq(0).attr("src","images/mtab1_off.png")
+            $(".footimgs img").eq(1).attr("src","images/mtab2_off.png")
+            $(".footimgs img").eq(2).attr("src","images/mtab3_off.png")
+            $(".footimgs img").eq(3).attr("src","images/mtab4_off.png")
+            $(".footimgs img").eq(4).attr("src","images/mtab5_off.png")
+        })
+        var r = $(this).attr("k")
+        $(".footimgs p").eq(r).css("color","blue");
+        $(".footimgs img").eq(r).attr("src","images/mtab1_on.png")
+    })
+
+    $(".footimgs").eq(1).click(function () {
+        $(".footimgs").each(function () {
+            $(".footimgs p").css("color","");
+            $(".footimgs img").eq(0).attr("src","images/mtab1_off.png")
+            $(".footimgs img").eq(1).attr("src","images/mtab2_off.png")
+            $(".footimgs img").eq(2).attr("src","images/mtab3_off.png")
+            $(".footimgs img").eq(3).attr("src","images/mtab4_off.png")
+            $(".footimgs img").eq(4).attr("src","images/mtab5_off.png")
+        })
+        var r = $(this).attr("k")
+        $(".footimgs p").eq(r).css("color","blue");
+        $(".footimgs img").eq(r).attr("src","images/mtab2_on.png")
+    })
+
+    $(".footimgs").eq(2).click(function () {
+        $(".footimgs").each(function () {
+            $(".footimgs p").css("color","");
+            $(".footimgs img").eq(0).attr("src","images/mtab1_off.png")
+            $(".footimgs img").eq(1).attr("src","images/mtab2_off.png")
+            $(".footimgs img").eq(2).attr("src","images/mtab3_off.png")
+            $(".footimgs img").eq(3).attr("src","images/mtab4_off.png")
+            $(".footimgs img").eq(4).attr("src","images/mtab5_off.png")
+        })
+        var r = $(this).attr("k")
+        $(".footimgs p").eq(r).css("color","blue");
+        $(".footimgs img").eq(r).attr("src","images/mtab3_on.png")
+    })
+
+    $(".footimgs").eq(3).click(function () {
+        $(".footimgs").each(function () {
+            $(".footimgs p").css("color","");
+            $(".footimgs img").eq(0).attr("src","images/mtab1_off.png")
+            $(".footimgs img").eq(1).attr("src","images/mtab2_off.png")
+            $(".footimgs img").eq(2).attr("src","images/mtab3_off.png")
+            $(".footimgs img").eq(3).attr("src","images/mtab4_off.png")
+            $(".footimgs img").eq(4).attr("src","images/mtab5_off.png")
+        })
+        var r = $(this).attr("k")
+        $(".footimgs p").eq(r).css("color","blue");
+        $(".footimgs img").eq(r).attr("src","images/mtab4_on.png")
+    })
+    $(".footimgs").eq(4).click(function () {
+        $(".footimgs").each(function () {
+            $(".footimgs p").css("color","");
+            $(".footimgs img").eq(0).attr("src","images/mtab1_off.png")
+            $(".footimgs img").eq(1).attr("src","images/mtab2_off.png")
+            $(".footimgs img").eq(2).attr("src","images/mtab3_off.png")
+            $(".footimgs img").eq(3).attr("src","images/mtab4_off.png")
+            $(".footimgs img").eq(4).attr("src","images/mtab5_off.png")
+        })
+        var r = $(this).attr("k")
+        $(".footimgs p").eq(r).css("color","blue");
+        $(".footimgs img").eq(r).attr("src","images/mtab5_on.png")
+    })
+    }
+</script>

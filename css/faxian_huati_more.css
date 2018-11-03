@@ -1,0 +1,22 @@
+*{padding: 0;margin: 0}
+/*===========div_1==================*/
+.div_1{width: 100%;border-bottom: 1px #ccc solid;}
+.nav_zuo{width: 90%;margin: 0 auto;height: 3rem;position: relative;}
+.iconzuo .icon-zuo{color: #007cff;font-size: 2.5rem;line-height: 3rem;font-weight: bold;position: absolute;left: -1.7rem;top: 0.2rem;}
+.fanhui{text-decoration:underline;margin-left:0.5rem;font-size: 1.3rem;color: #007cfd;width:6rem;height:3rem; display: inline-block;line-height: 3rem;}
+.huati{font-size: 1.4rem;font-weight:bold;width:6rem;height:3rem;text-align: center;
+    display: inline-block;position: absolute;left: 50%;margin-left: -3rem;line-height: 3rem;}
+
+/*=============div_2=========*/
+.div_2{width: 100%;border-bottom: 1px #ccc solid;padding-bottom: 1rem;}
+.sec_01{width: 90%;padding-top:1.2rem;margin:0 auto;}
+.span_left{width: 16%;height: 2.2rem;border: 1px #840e0c solid;display: inline-block;color: #840e0c;
+    line-height: 2.2rem;text-align: center;border-radius: 2rem;font-size: 1.2rem;}
+.span_right{font-size: 1.4rem;margin-left: 1rem}
+
+.img_1{margin-top: 1.2rem}
+
+.bott{width: 100%;margin: 0.8rem auto;}
+.bott .sp_left{color:#aaa;float: left}
+.bott .sp_right{color:#aaa;float: right}
+.clear{clear: both;}
